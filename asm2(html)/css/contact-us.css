@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--black);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    color: #fff;
+} 
+:root{
+    --pink: #f295b2;
+    --white: #fff;
+    --black: #333;
+}
+header{
+    height: 50px;
+    background-color: var(--pink);  
+}
+header .content{
+    height: 45px;
+    border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.num .email{
+    display: none;
+    
+}
+.media span{
+    padding: 0 5px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    height: 70px;
+}
+nav .logo img{
+    height: 60px;
+    margin-left: 20px;     
+}
+.menu ul{
+    display: inline;
+}
+.menu ul li{ 
+    padding: 0 20px;
+    display: inline;
+    position: relative;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li a{
+    transition: .4s;
+    color: #333;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color: var(--pink);
+}
+.menu ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;;
+    top: 35px;
+    left: 20px;
+    width: 190px;
+    z-index: 2;
+}
+.menu ul ul li{
+    display: block;
+    padding: 0; 
+}
+.menu ul ul li a{
+    display: block;
+    padding: 10px 10px;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-left: 1px solid pink;
+    background-color: var(--pink);
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+.menu ul ul li a:hover{
+    color: var(--black);
+}
+.menu ul li a i{
+    color: black;
+    font-size: 12px ;
+    padding: 0 3px;
+    transition: .4s;
+}
+.menu ul li a:hover i{
+    color: #f295b2;
+}
+.menu ul ul li a:hover {
+    color: var(--black);
+}
+.menu-draw{
+    background-image: url(../image/menu-draw.png);
+    background-size: cover;
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    top: 0;
+}
+.banner{
+    position: relative;
+    background-image: url(../image/cake-trangtri.jpg);
+    background-size: contain;
+    height: 140px;
+}
+.title{
+    color: var(--pink);
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+}
+.something{
+    padding: 70px;
+}
+.something span{
+    color: rgba(170, 170, 170, 0.904);
+    font-weight: 100;
+}
+.something h2{
+    color: var(--black);
+    font-size: 35px;
+    margin-bottom: 20px;
+    display: inline;
+}
+.something p{
+    margin-top: 30px;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+    font-weight: bold;
+    font-size: 20px;
+}
+form{
+    width: 670px;
+    height: 700px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+form label{
+    color: #333;
+}
+input{
+    border: 1px solid rgb(230, 209, 218);
+    border-radius: 3px;
+    height: 53px;
+    width: 280px;
+    padding: 0 10px;
+    color: #333;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    outline: none;
+}
+form p{
+    color: #333;
+    margin-top: 70px ;
+}
+form label{
+    color: rgb(105, 105, 105);
+    font-size: 14px;
+}
+.rectangle{
+    width: 582px;
+}
+.rectangle1{
+    height: 200px;
+    width: 580px;
+    padding-bottom: 140px;
+    padding-left: 12px;
+}
+form button{
+    background-color: #f295b2;
+    width: 580px;
+    height: 50px;
+    border: none;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-top: 30px;
+}
+article{
+    float: left;
+    margin-right: 170px;
+}
+aside{
+    margin-top: 10px;
+    height: 700px;
+} 
+aside .contact{
+    display: inline;
+}
+aside .contact h3{
+    color: #333;
+    padding-bottom: 10px;
+}
+aside .contact p{
+    color: #333;
+}
+.contact .title2{
+    padding: 20px 80px;
+}
+.contact .title2 p{
+    padding-top: 10px;
+    color: rgb(128, 128, 128);
+}
+.contact .title2 .phone{
+    display: inline;
+}
+.contact .title2 .mail{
+    display: inline;
+}
+
+form .by-clicking p{
+    font-size: 13px;
+    color: rgb(148, 148, 148);
+    margin-top: 50px;
+}
+.contentt{
+    height: 400px;
+}
+iframe{
+    padding: 80px 20px;
+    width: 1259px;
+    height: 700px;
+}
+.join-our{
+    height: 120px;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.join-our .newsletter{
+    width: 456px;
+}
+.join-our p{
+    font-size: 21px;
+    font-weight: bold;
+} 
+.join-our input{
+    margin-top: 30px;
+    width: 350px;
+}
+.join .subscribe input{
+    border: none;
+    font-size: 15px;
+}
+.join-our .subscribe button{
+    height: 53px;
+    width: 200px;
+    margin-left: -30px;
+    border: none;
+    color: rgb(99, 99, 99);
+    background-color: rgb(211, 211, 211);
+    transition: .3s;
+    font-weight: bold;
+    font-size: 14px;
+}
+.join .subscribe button:hover{
+    color: white;
+}
+
+footer{
+    background-color: #333;  
+    height: 400px;
+    
+}
+footer .my-footer{
+    display: flex;
+    height: 340px;
+    justify-content: space-around;
+    align-items: center;   
+}
+footer .my-footer p{
+    font-weight: 100;
+    color: rgb(126, 126, 126);   
+}
+.my-footer i{
+    margin: 6px;
+    padding: 5px 6px;
+    border: 1px solid pink;
+    border-radius: 50%;
+    transition: .4s;
+}
+.my-footer i:hover{
+    cursor: pointer;
+    color: var(--pink);
+}
+.my-footer .fb-ft{
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+footer .copy-right{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(126, 126, 126);
+}
+.w25{
+    width: 20%;
+}
+.p20{
+    padding: 20px 0;
+}
+.p10{
+    padding: 10px 0;
+}
+.quick-links ul li a{
+    color: rgb(126, 126, 126);
+    transition: .4s;
+}
+.quick-links ul li a:hover{
+    color: var(--pink);
+}
+.copy-right p{
+    padding: 0 30px;
+    color: rgb(126, 126, 126);
+}
+
+

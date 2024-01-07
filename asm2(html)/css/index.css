@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+} 
+:root{
+    --pink: #f295b2;
+    --white: #fff;
+    --black: #333;
+}
+header{
+    height: 50px;
+    background-color: var(--pink);  
+}
+header .content{
+    height: 45px;
+    border-bottom: 1px dotted white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.num .email{
+    display: none   ;
+}
+.media span{
+    padding: 0 5px;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white);
+    height: 70px;
+    z-index: 2;
+}
+nav .logo img{
+    height: 60px;
+    margin-left: 20px;     
+}
+.menu ul{
+    display: inline;
+}
+.menu ul li{ 
+    padding: 0 20px;
+    display: inline;
+    position: relative;
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li a{
+    transition: .4s;
+    color: #333;
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color: var(--pink);
+}
+.menu ul ul{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    top: 35px;
+    left: 20px;
+    width: 190px;
+    z-index: 2;
+}
+.menu ul ul li{
+    display: block;
+    padding: 0; 
+}
+.menu ul ul li a{
+    display: block;
+    padding: 10px 10px;
+    border-right: 1px solid pink;
+    border-bottom: 1px solid pink;
+    border-left: 1px solid pink;
+    background-color: var(--pink);
+    color: var(--white);
+    font-weight: 400;
+    text-align: center;
+}
+.menu ul li a i{
+    color: black;
+    font-size: 12px ;
+    padding: 0 3px;
+    transition: .4s;
+}
+.menu ul li a:hover i{
+    color: #f295b2;
+}
+.menu ul ul li a:hover {
+    color: var(--black);
+}
+.menu-draw{
+    height: 20px;
+    width: 100%;
+    background-image: url(../image/menu-draw.png);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+.banner_1{
+    background-image: url('../image/cake2.jpg');
+    background-size: cover;
+    height: 660px;
+    width: 100%;
+    position: relative;
+}
+.banner_1 .content-banner{
+    width: 80%;
+    height: 390px;
+    /*border:3px solid #62c3e7;*/
+    position: absolute;
+    top: 130px;
+    left: 60px;
+}
+.banner_1 .content-banner h1{
+    font-size: 55px;
+}
+.banner_1 .content-banner p{
+    color: #fff;
+    font-size: 18px;
+    padding: 40px 0 20px 0;
+}
+.btn{
+    font-size: 18px;
+    padding: 12px 40px;
+    margin: 20px 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #42849c;
+    transition: .4s;
+}
+.btn:hover{
+    background-color: var(--pink);
+    color: var(--white);
+}
+.glass{
+    width: 100%;
+    height: 100%;
+    margin-top: -10px;
+    background-color: rgba(8, 8, 8, 0.466); 
+}
+.content_1{
+    height: 550px;
+    margin-top: 50px;
+    /*border: 3px solid black;*/
+    display: flex;
+}
+.content_text{
+    width: 50%;
+    height: 100%;
+    padding: 120px 0 0 110px;
+}
+.content_text .text1{
+    color: #333;
+    padding: 20px 0 15px;
+    font-style: italic;
+    font-weight: 500;
+}
+.content_text .text2{
+    color: #333;
+    padding: 0 0 15px;
+    font-weight: 300;
+}
+.content_img{
+    width: 50%;
+    height: 100%;
+    padding-top: 120px;
+    padding-left: 110px;
+}
+.content_img img{
+    margin: auto;
+}
+.content_1 .content_text h2{
+    font-size: 38px;
+    font-weight: 500;
+    color: black;
+}
+.btn_pink{
+    border-radius: 50px;
+    border: none;
+    color: var(--white);
+    background-color: var(--pink);
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.content_2{
+   width: 100%;
+   height: auto;
+}
+.list-product{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sale{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: inline;
+    padding: 10px 5px;
+    background-color: var(--pink);
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 15px;
+    z-index: 1000;
+}
+.list-product .column{
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    width: 263px;
+    height: 339px;
+    border-radius: 5px;
+    background-color: var(--white);
+}
+.list-product .column .product .img-product{
+    transition: 0.4s;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.list-product .column .product .img-product:hover{
+    transform: scale(1.1);
+}
+.list-product .column .product .infor-product{
+    color: black;
+}
+.list-product .column .product .price{
+    position: absolute;
+    bottom: 169.5px;
+    left: 56px;
+    background-color:var(--white);
+    height: 40px;
+    width: 151px;
+    padding: 8px 35px;    
+}
+.list-product .column .product .price span{
+    color: var(--black);
+    font-weight: bold;
+}
+.list-product .column .product .price span del{
+    color: gray;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+.infor-product p{
+    text-align: center;
+    color: #333;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 20px 0;
+
+}
+.infor-product button{
+    background-color: #56adcc;
+    color: var(--white);
+    border: none;
+    border-radius: 2px;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 62.5px;
+}
+.special{ 
+    position: relative;
+    width: 100%;
+    height: 82vh;
+    background: url('../image/dessert.jpg');
+    background-size: cover; /*k bể và canh đều*/
+    background-attachment: fixed;
+    background-position: center; /*lấy giữa tấm hình*/
+}
+.special::before{ /*trước*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    content:""; /*chuỗi rỗng*/
+    width: 100%;
+    height: 475px;
+    background-color: rgba(0, 8, 8, 0.5);
+}
+
+.special img{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+}
+.infor-recipe{
+    position: absolute;
+    right: 50px;
+    top: 100px;
+    height: 300px;
+    width: 60%;
+    border-left: 1px solid pink;
+    padding: 55px 70px;
+}
+.infor-recipe h2{
+    font-size: 55px;
+    font-weight: 800px;
+}
+.infor-recipe p{
+    padding: 40px 0;
+    color: #fff;
+}
+.infor-recipe button{
+    border-radius: 50px;
+    background-color: white;
+    color: var(--black);
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+}
+.main-services{
+    background-color: var(--pink);
+    width: 100%;
+    height: 492px;
+    
+}
+.main-services .main{
+    height: 80%;
+    display: flex; /*để dùng 2 cái dưới :V. để 3 div lên 1 hàng*/
+    align-items: center; /*căn giữa theo chiều cao*/
+    justify-content: space-around; /*căn đều theo chiều ngang*/
+    
+}
+.main-services h2{
+    text-align: center;
+    padding-top: 90px;
+    font-size: 40px;
+    border-bottom: 1px solid white;
+}
+.main-services p{
+    color: #fff;
+}
+.main .item1, .item2, .item3{
+    width: 25%;
+}
+.main i{
+    font-size: 70px;
+}
+.main h3{
+    font-size: 30px;
+    padding: 20px 0;
+} 
+.content2{
+    margin-top: 150px;
+    height: 500px;
+}
+.join-our{
+    margin-top: 1px;
+    height: 120px;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.join-our .newsletter{
+    width: 456px;
+}
+.join-our p{
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+} 
+.join-our input{
+    margin-top: 30px;
+    width: 350px;
+}
+.subscribe input{
+    height: 53px;
+    border: none;
+    padding-left: 10px;
+}
+.join .subscribe input{
+    border: none;
+    font-size: 15px;
+}
+.join-our .subscribe button{
+    height: 53px;
+    width: 200px;
+    margin-left: -30px;
+    border: none;
+    color: rgb(99, 99, 99);
+    background-color: rgb(211, 211, 211);
+    transition: .3s;
+    font-weight: bold;
+    font-size: 14px;
+}
+.join .subscribe button:hover{
+    color: white;
+}
+footer{
+    background-color: #333;  
+    height: 400px;  
+}
+footer .my-footer{
+    display: flex;
+    height: 340px;
+    justify-content: space-around;
+    align-items: center;   
+}
+footer .my-footer p{
+    font-weight: 100;
+    color: rgb(126, 126, 126);   
+}
+.my-footer i{
+    margin: 6px;
+    padding: 5px 6px;
+    border: 1px solid pink;
+    border-radius: 50%;
+    transition: .4s;
+}
+.my-footer i:hover{
+    cursor: pointer;
+    color: var(--pink);
+}
+.my-footer .fb-ft{
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+footer .copy-right{
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(126, 126, 126);
+}
+.w25{
+    width: 20%;
+}
+.p20{
+    padding: 20px 0;
+}
+.p10{
+    padding: 10px 0;
+}
+.quick-links ul li a{
+    color: rgb(126, 126, 126);
+    transition: .4s;
+}
+.quick-links ul li a:hover{
+    color: var(--pink);
+}
+.copy-right p{
+    padding: 0 30px;
+    color: rgb(126, 126, 126);
+}

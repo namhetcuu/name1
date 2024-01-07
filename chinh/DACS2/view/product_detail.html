@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ND Shop</title>
+  <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Js/script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- ============================== Header starts ============================== -->
+<header>
+  <label for="toggler" class="bx bx-menu"></label>
+  <input type="checkbox" id="toggler">
+  <a href="" class="logo">N<span>D</span> Shop</a>
+  <nav class="navbar">
+      <ul>
+          <li> <a href="">Trang chủ</a></li>
+          <li>
+              <a href="">Sản phẩm</a>
+              <ul class="dropdown_menu">
+                  <li><a href="">Nước hoa nam</a></li>
+                  <li><a href="">Nước hoa nữ</a></li>
+                  <li><a href="">Nước hoa chiết</a></li>
+              </ul>
+          </li>
+          <li> <a href="">Giới thiệu</a></li>
+          <li> <a href="#review">Đánh giá</a></li>
+          <li> <a href="">Liên hệ</a></li>
+      </ul>
+  </nav>
+  <div class="navbar-icons">
+      <input type="text" placeholder="Tìm kiếm">
+      <a href="" class="bx bx-cart"></a>
+      <a href="" class="bx bx-user-circle"></a>
+  </div>
+</header>
+<!-- ============================== Header ends ============================== -->
+  <section class="page">
+    <div class="links-page">
+      <a href="">Trang chủ</a> /
+      <a href="">Nước hoa nam</a> /
+      <p>Nước hoa gucci</p>
+    </div>
+  </section>
+  <!-- ============================== Products_detail starts ============================== -->
+  <section class="products" id="products">
+    <h3 class="products-name">Montblanc Explorer Platinum EDP</h3>
+    <div class="products-main">
+        <form action="">
+            <div class="products-image">
+                <img src="../view/images/nhnu1.jpg" alt="">
+            </div>
+            <div class="products-info">
+                <ul>
+                    <li>Thương hiệu:Gucci</li>
+                    <li>Giá tiền: <span class="price_1">2.990.000 VND</span><span class="price_2">2.990.000 VND</span></li>
+                    <li><p>Miễn phí vận chuyển cho đơn hơn giá trị trên 750.000 VNĐ</p></li>
+                    <li>Dung tích: <span>100ML</span></li>
+                    <li>Số lượng trong kho: <span>24</span></li>
+                    <li>Số lượng:<input type="number" name="cart_quantity" id="" min="1" value="1"></li>
+                    <li>
+                        <input type="hidden" name="cart_name" value="" />
+                        <input type="hidden" name="product_id" value="" />
+                        <input type="hidden" name="cart_price" value="" />
+                        <input type="hidden" name="cart_image" value="" />
+                        <input type="submit" value="Thêm vào giỏ">
+                    </li>
+                    
+                </ul>
+            </div>
+        </form>
+    </div>
+    <div class="products-describe">
+        <h3>Mô tả sản phẩm</h3>
+        <div class="content">
+            <p>
+                Montblanc Explorer Platinum EDP một sự bổ sung vào năm 2023 cho bộ sưu tập Explorer,
+                 lấy cảm hứng từ chủ đề “khám phá và phiêu lưu” của bộ sưu tập,
+                  hương thơm gỗ và thơm này sẽ đưa bạn đến những đỉnh núi cao nhất thế giới.
+                 Sự tươi mát hiện đại và tràn đầy sinh lực của nó nắm bắt được không khí trong lành của núi non rất phấn khích với những nốt hương xanh và cam quýt.
+            </p>
+            <img src="../view/images/nhnu1.jpg" alt="">
+        </div>
+    </div>
+</section>
+<!-- ============================== Product starts ============================== -->
+<section class="wrapper" id="wrapper">
+    <div class="products">
+      <div class="headline">
+        <h3>Sản phẩm liên quan</h3>
+      </div>
+      <ul class="product-content">
+        <li>
+          <span class="discount">10%</span>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="images/nh2.jpg" alt="">
+              </a>
+              <div class="product-center">
+                  <a href="" class="bx bxs-show"></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="" class="product-name">Nước hoa designer Nam</a>
+            <div class="product-price">
+              1.200.000 VNĐ <span> 1.400.000 VNĐ</span>
+            </div>
+          </div>
+          <div class="product-cart">
+            <form action="" method="post">
+                <input type="hidden" name="cart_name" value="" />
+                <input type="hidden" name="product_id" value="" />
+                <input type="hidden" name="cart_quantity" value="1" />
+                <input type="hidden" name="cart_price" value="" />
+                <input type="hidden" name="cart_image" value="" />
+              <input type="submit" value="Thêm giỏ hàng" name="themgiohang" class="input-cart">
+            </form>
+          </div>
+        </li>
+        <li>
+          <span class="discount">10%</span>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="images/nh2.jpg" alt="">
+              </a>
+              <div class="product-center">
+                  <a href="" class="bx bxs-show"></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="" class="product-name">Nước hoa designer Nam</a>
+            <div class="product-price">
+              1.200.000 VNĐ <span> 1.400.000 VNĐ</span>
+            </div>
+          </div>
+          <div class="product-cart">
+            <form action="" method="post">
+                <input type="hidden" name="cart_name" value="" />
+                <input type="hidden" name="product_id" value="" />
+                <input type="hidden" name="cart_quantity" value="1" />
+                <input type="hidden" name="cart_price" value="" />
+                <input type="hidden" name="cart_image" value="" />
+              <input type="submit" value="Thêm giỏ hàng" name="themgiohang" class="input-cart">
+            </form>
+          </div>
+        </li>
+        <li>
+          <span class="discount">10%</span>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="images/nh2.jpg" alt="">
+              </a>
+              <div class="product-center">
+                  <a href="" class="bx bxs-show"></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="" class="product-name">Nước hoa designer Nam</a>
+            <div class="product-price">
+              1.200.000 VNĐ <span> 1.400.000 VNĐ</span>
+            </div>
+          </div>
+          <div class="product-cart">
+            <form action="" method="post">
+                <input type="hidden" name="cart_name" value="" />
+                <input type="hidden" name="product_id" value="" />
+                <input type="hidden" name="cart_quantity" value="1" />
+                <input type="hidden" name="cart_price" value="" />
+                <input type="hidden" name="cart_image" value="" />
+              <input type="submit" value="Thêm giỏ hàng" name="themgiohang" class="input-cart">
+            </form>
+          </div>
+        </li>
+        <li>
+          <span class="discount">10%</span>
+          <div class="product-item">
+            <div class="product-top">
+              <a href="" class="product-thumb">
+                <img src="images/nh2.jpg" alt="">
+              </a>
+              <div class="product-center">
+                  <a href="" class="bx bxs-show"></a>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <a href="" class="product-name">Nước hoa designer Nam</a>
+            <div class="product-price">
+              1.200.000 VNĐ <span> 1.400.000 VNĐ</span>
+            </div>
+          </div>
+          <div class="product-cart">
+            <form action="" method="post">
+                <input type="hidden" name="cart_name" value="" />
+                <input type="hidden" name="product_id" value="" />
+                <input type="hidden" name="cart_quantity" value="1" />
+                <input type="hidden" name="cart_price" value="" />
+                <input type="hidden" name="cart_image" value="" />
+                <input type="submit" value="Thêm giỏ hàng" name="themgiohang" class="input-cart">
+            </form>
+          </div>
+        </li>
+      </ul>
+    </div>
+</section>
+<!-- ============================== Products ends ============================== -->
+  <!-- ============================== Footer starts ============================== -->
+<footer class="footer">
+  <div class="row">
+      <div class="footer-col">
+          <h4>Trang</h4>
+          <ul>
+              <li><a href="#">Trang chủ</a></li>
+              <li><a href="#">Sản phẩm</a></li>
+              <li><a href="#">Giới thiệu</a></li>
+              <li><a href="#">Liên hệ</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>Hỗ trợ khách hàng</h4>
+          <ul>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách đổi trả</a></li>
+              <li><a href="#">Tình trạng đơn hàng</a></li>
+              <li><a href="#">Hình thức thanh toán</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>Hướng dẫn</h4>
+          <ul>
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Hướng dẫn giao nhận</a></li>
+              <li><a href="#">Điều khoản dịch vụ</a></li>
+          </ul>
+      </div>
+      <div class="footer-col">
+          <h4>Kênh</h4>
+          <div class="social-links">
+              <a href="#"><i class='bx bxl-facebook' ></i></a>
+              <a href="#"><i class="bx bxl-twitter"></i></a>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+          </div>
+      </div>
+  </div>
+</footer>
+<!-- ============================== Footer ends ============================== -->
+</body>
+</html>

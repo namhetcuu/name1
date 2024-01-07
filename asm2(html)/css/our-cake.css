@@ -1,0 +1,187 @@
+.banner1{
+    position: relative;
+    width: 100%;
+    height: 230px;
+}
+.banner1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* để hình k vỡ*/   
+}
+.menu-draww{
+    background-image: url(../image/menu-draw.png);
+    background-size: cover;
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    top: 0;
+}
+.content1{
+    margin-top: 190px;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+.article{
+    position: relative;
+    width: 55%;
+    height: 500px;
+}
+.content1 article .iconn .sale{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    border-radius: 50%;
+    border: 1px solid pink;
+    background-color: rgb(255, 175, 188);
+    padding: 14px 8px;
+    font-weight: 500;
+}
+.content1 .article span{
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 6px 9px;
+}
+.aside{
+    height: 500px;
+    width: 41.5%;
+}
+.aside a{
+    color: rgb(121, 121, 121);
+    font-size: 14px;
+}
+.aside h4{
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    padding: 12px 0; 
+}
+.aside .price del{
+    color: black;
+    text-decoration: line-through;
+    font-size: 13px;
+    color: rgb(121, 121, 121);
+}
+.aside .price p{
+    color: black;
+    font-size: 17px;
+}
+.aside .this-is p{
+    color: rgb(97, 97, 97);
+    padding: 50px 0;
+}
+.aside .SKU p{
+    border-top: 1px solid rgb(194, 194, 194);
+    margin-right: 80px;
+    color: rgb(95, 95, 95);
+    font-size: 13px;
+    padding-top: 15px;
+}
+.aside .butt{
+    display: inline;
+}
+.butt button{
+    letter-spacing: 17px;
+}
+.aside button{
+    margin-bottom: 70px;
+    width: 130px;
+    height: 45px;
+    border: none;
+    background-color: pink;
+    border-radius: 3px;
+    font-size: 15px;
+}
+.slide_show{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide_show .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide{
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+}
+.slide div{
+    scroll-snap-align: start;
+}
+.slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide-link {
+    margin-left: 140px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    width: 400px;
+}
+.slide-link a{
+    width: 80px;
+    height: 80px;
+}
+.slide-link a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.content2{
+    height: 300px;
+    margin-top: 80px;
+}
+.content2 .description{
+    border-bottom: 1px solid rgb(206, 206, 206);
+    margin-right: 130px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.content2 .description p{
+    color: rgb(85, 85, 85);
+    display: inline;
+    padding-left: 40px;
+}
+.content2 h3{
+    color: black;
+    padding: 30px 50px;
+}
+.content2 .Descrip h3{
+    font-size: 25px;
+}
+.content2 .Descrip p{
+    color: rgb(82, 82, 82);
+    padding-left: 30px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+    margin-right: 130px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+.you{
+    height: 400px;
+}
+.you h3{
+    color: black;
+    padding-left: 55px;
+    font-size: 26px;
+}
+.content_2{
+    margin-top: -360px;
+}
+

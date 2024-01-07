@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Js/script.js">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- ============================== Header starts ============================== -->
+<header>
+    <label for="toggler" class="bx bx-menu"></label>
+    <input type="checkbox" id="toggler">
+    <a href="" class="logo">N<span>D</span> Shop</a>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="">Trang chủ</a></li>
+            <li>
+                <a href="">Sản phẩm</a>
+                <ul class="dropdown_menu">
+                    <li><a href="">Nước hoa nam</a></li>
+                    <li><a href="">Nước hoa nữ</a></li>
+                    <li><a href="">Nước hoa chiết</a></li>
+                </ul>
+            </li>
+            <li> <a href="">Giới thiệu</a></li>
+            <li> <a href="#review">Đánh giá</a></li>
+            <li> <a href="">Liên hệ</a></li>
+        </ul>
+    </nav>
+    <div class="navbar-icons">
+        <input type="text" placeholder="Tìm kiếm">
+        <a href="" class="bx bx-cart"></a>
+        <a href="" class="bx bx-user-circle"></a>
+    </div>
+  </header>
+  <!-- ============================== Header ends ============================== -->
+  <!-- ============================== client starts ============================== -->
+  <section class="page">
+    <div class="links-page">
+      <a href="">Trang chủ</a> /
+      <p>Trang khách hàng</p>
+    </div>
+  </section>
+  <div class="headline">
+      <h3>Trang khách hàng</h3>
+  </div>
+  <section class="clients" id="clients">
+    <div class="main-client">
+        <!-- <form action="">
+            <div class="client-info">
+                <h3>TÀI KHOẢN CỦA TÔI</h3>
+                <ul>
+                    <li><i class='bx bxs-home'></i>Tên tài khoản: Hồ Văn Dân</li>
+                    <li><i class='bx bxs-map'></i>Địa chỉ: TP.Đà Nẵng</li>
+                    <li><i class='bx bxs-phone-call' ></i>Điện thoại: 0777431698</li>
+                    <li><i class='bx bxs-envelope' ></i>Email: hovandan2610@gmail.com</li>
+                </ul>
+            </div>
+        </form>
+        <div class="form-client">
+            <form action="" method="">
+              <label for="name">Tên tài khoản <span>*</span></label>
+              <input type="text" id="name" name="name">
+              <label for="email">Email <span>*</span></label>
+              <input type="text" id="email" name="email">
+              <label for="phone">Số điện thoại <span>*</span></label>
+              <input type="text" id="phone" name="phone">
+              <label for="address">Địa chỉ <span>*</span></label>
+              <input type="text" id="address" name="address">
+              <button type="submit" name="update_sp" class="btn btn-primary">Cập nhật</button>
+            </form>
+          </div> -->
+        <form action="">
+            <div class="client-info">
+                <h3>TÀI KHOẢN CỦA TÔI</h3>
+                <ul>
+                    <li><i class='bx bxs-home'></i>Tên tài khoản: Hồ Văn Dân</li>
+                    <li><i class='bx bxs-map'></i>Địa chỉ: TP.Đà Nẵng</li>
+                    <li><i class='bx bxs-phone-call' ></i>Điện thoại: 0777431698</li>
+                    <li><i class='bx bxs-envelope' ></i>Email: hovandan2610@gmail.com</li>
+                    <li><a href="?quanly=update">Sửa thông tin tài khoản</a></li>
+                </ul>
+            </div>
+        </form>
+        <div class="cart-container">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Mã đơn hàng</th>
+                        <th>Giá trị đơn hàng</th>
+                        <th>Trạng thái đơn hàng</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8654</td>
+                        <td>1.200.000 VNĐ</td>
+                        <td>Chưa vận chuyển</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Chưa có đơn hàng</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </section>
+  <!-- ============================== client ends ============================== -->
+    <!-- ============================== Footer starts ============================== -->
+<footer class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h4>Trang</h4>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Sản phẩm</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hỗ trợ khách hàng</h4>
+            <ul>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Chính sách vận chuyển</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Tình trạng đơn hàng</a></li>
+                <li><a href="#">Hình thức thanh toán</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Hướng dẫn</h4>
+            <ul>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Hướng dẫn mua hàng</a></li>
+                <li><a href="#">Hướng dẫn giao nhận</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Kênh</h4>
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class="bx bxl-twitter"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+  </footer>
+  <!-- ============================== Footer ends ============================== -->
+</body>
+</html>
